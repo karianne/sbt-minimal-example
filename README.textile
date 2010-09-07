@@ -8,7 +8,7 @@ This example is tested using IDEA 9.0.3, Scala 2.8.0 and SBT 0.7.4, but latest v
 * If you haven't done so already, "download and install Scala":http://www.scala-lang.org/downloads .
 * If you haven't done so already, "download and install Git":http://git-scm.com/download. If you're on Windows, the msysGit distribution is recommended
 * If you haven't done so already, "download and setup SBT":http://code.google.com/p/simple-build-tool/wiki/Setup 
-* Clone this repository by firing up a command line window, navigating to the directory you would like to have the source code and running the command @git clone git@github.com:karianne/sbt-minimal-example.git@
+* Clone this repository by firing up a command line window, navigating to the directory you would like to have the source code and running the command @git clone git\@github.com:karianne/sbt-minimal-example.git@
 * Start sbt by running the command @sbt@. This will start up the sbt shell and download plugins.
 * Download dependencies by running the command @update@ from within the sbt shell
 * Create an IDEA project file by running the command @idea@ from within the sbt shell
