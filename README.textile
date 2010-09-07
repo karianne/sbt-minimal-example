@@ -1,0 +1,27 @@
+This project aims to be a working example of how to setup a Scala project with SBT, IDEA and JUnit tests.
+
+h1. How to setup
+
+This example is tested using IDEA 9.0.3, Scala 3.0.0 and SBT 0.7.4, but latest versions of everything is probably fine.
+
+* If you haven't done so already, "download and install IDEA"
+* If you haven't done so already, "download and install Scala":http://www.scala-lang.org/downloads .
+* If you haven't done so already, "download and install Git":http://git-scm.com/download. If you're on Windows, the msysGit distribution is recommended
+* If you haven't done so already, "download and setup SBT":http://code.google.com/p/simple-build-tool/wiki/Setup 
+* Clone this repository by firing up a command line window, navigating to the directory you would like to have the source code and running the command @git clone xxxxxxxx@
+* Start sbt by running the command@sbt@. This will start up the sbt shell and download plugins.
+* Download dependencies by running the command @update@ from within the sbt shell
+* Create an IDEA project file by running the command @idea@ from within the sbt shell
+* Open the generated IDEA project file (sbt-minimal-example.ipr)
+* If you haven't done so already, install the Scala plugin for IDEA. Settings -> Plugins -> Available -> Search for Scala -> Right-click "Scala" -> Download and install
+
+h1. How to use
+
+* To run tests continuously (that's why you're here, right? ;) ), run the command @~test@ from within the sbt shell.
+* Whenever you add a new dependency, run the command @idea@ from within the sbt shell again to regenerate the IDEA file. Note that this causes all project configuration you've done from IDEA itself to be lost.
+* If you add a new JUnit test class, remember to extend the ScalaTest class JUnitSuite. SBT does not support running JUnit tests directly, but ScalaTest supports wring tests JUnit style.
+
+h1. Where to find out more
+
+* "The official SBT homepage":http://code.google.com/p/simple-build-tool/
+* The support for IDEA project file generation is via a plugin for SBT: "sbt-idea-plugin":http://github.com/mpeltonen/sbt-idea-plugin 
